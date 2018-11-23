@@ -1,4 +1,4 @@
-class RemovePlayersSeedListFromTournaments < ActiveRecord::Migration
+class RemovePlayersSeedListFromTournaments < ActiveRecord::Migration[5.2]
   def up
     remove_column :tournaments, :players_seed_list
   end

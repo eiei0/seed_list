@@ -1,4 +1,4 @@
-class CreateSeedLists < ActiveRecord::Migration
+class CreateSeedLists < ActiveRecord::Migration[5.2]
   def up
     create_table :seed_lists do |t|
       t.integer :tournament_id
