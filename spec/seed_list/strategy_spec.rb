@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe SeedList::Strategy do
   before :all do
-    @tournament = FactoryGirl.create :tournament
-    @players = FactoryGirl.create_list :player, 4, tournament: @tournament
+    @tournament = create :tournament
+    @players = create_list :player, 4, tournament: @tournament
   end
 
   describe SeedList::Strategy::Knockout do
@@ -45,7 +45,7 @@ describe SeedList::Strategy do
 
   describe SeedList::Strategy::MLGPlayoff do
     before :all do
-      @players = FactoryGirl.create_list :player, 16
+      @players = create_list :player, 16
     end
 
     describe 'seed' do

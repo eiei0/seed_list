@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Tournament do
-  let(:tournament){ FactoryGirl.create :tournament }
+  let(:tournament){ create :tournament }
   subject { tournament }
 
   describe '#seed_list' do
